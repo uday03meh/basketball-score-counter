@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="home">
+                <h3 class="heading">HOME</h3>
+                <div id = "home-score-bg" class="score-bg">
+                <h2 id="home-score" class="score">0</h2>
+                </div>
+                <button id="plus-one-home" class="btn" onclick="addOneHome(), highlightWinner()">+1</button>
+                <button id="plus-two-home" class="btn" onclick="addTwoHome(), highlightWinner()">+2</button>
+                <button id="plus-three-home" class="btn" onclick="addThreeHome(), highlightWinner()">+3</button>
+            </div>
+            <div id="guest">
+                <h3 class="heading">GUEST</h3>
+                <div id = "guest-score-bg" class="score-bg">
+                <h2 id="guest-score" class="score">0</h2>
+                </div>
+                <button id="plus-one-guest" class="btn" onclick="addOneGuest(), highlightWinner()">+1</button>
+                <button id="plus-two-guest" class="btn" onclick="addTwoGuest(), highlightWinner()">+2</button>
+                <button id="plus-three-guest" class="btn" onclick="addThreeGuest(), highlightWinner()">+3</button>
+            </div>
+        </div>
+        <div id="new-game">
+            <button id="new-game-btn" class="btn" onclick="newGame()">NEW GAME</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
