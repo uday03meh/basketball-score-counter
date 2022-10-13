@@ -10,44 +10,43 @@
 
 ### 2. Clone your forked copy of the project.
 
-      ```git clone https://github.com/<your_user_name>/basketball-score-counter.git```
+      git clone https://github.com/<your_user_name>/basketball-score-counter.git
       
-      
-      #### where your_user_name is your GitHub username.
+       where your_user_name is your GitHub username.
 
 ### 3. Navigate to the project directory.
 
-    ```cd basketball-score-counter```
+    cd basketball-score-counter
 
 ### 4. Add a reference(remote) to the original repository.
 
-    ```git remote add upstream https://github.com/uday03meh/basketball-score-counter.git```
+   git remote add upstream https://github.com/uday03meh/basketball-score-counter.git
 
 ### 5. Check the remotes for this repository.
 
-     ```git remote -v```
+     git remote -v
 
 ### 6. Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository). Feel free to raise new issues.
 
-    ```git pull upstream main```
+    git pull upstream main
 
 ### 7. Create a new branch.
 
-     ```git checkout -b <your_branch_name>```
+     git checkout -b <your_branch_name>
 
 ### 8. Make necessary changes and commit those changes
 
 ### 9. Track your changes.
 
-    ```git add .```
+    git add .
 
 ### 10. Commit your changes .
 
-    ```git commit -m "your message"```
+    git commit -m "your message"
 
 ### 11. Push the committed changes in your feature branch to your remote repo.
 
-    ```git push -u origin <your_branch_name>```
+    git push -u origin <your_branch_name
 
 ### 12. To create a pull request, click on Compare & pull request. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
