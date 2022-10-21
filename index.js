@@ -35,6 +35,8 @@ function newGame() {
     guestScore = 0;
     document.getElementById("home-score").innerText = 0
     document.getElementById("guest-score").innerText = 0
+    document.getElementById("guest-score-bg").style.border = "none";
+    document.getElementById("home-score-bg").style.border = "none";
 }
 
 
@@ -44,10 +46,14 @@ function highlightWinner() {
     if(homeScore > guestScore){
         document.getElementById("guest-score-bg").style.border = "5px solid red";
         document.getElementById("home-score-bg").style.border = "5px solid green";
-        }
+    }
     else if(guestScore > homeScore){
-document.getElementById("guest-score-bg").style.border = "5px solid green";
-document.getElementById("home-score-bg").style.border = "5px solid red";
+        document.getElementById("guest-score-bg").style.border = "5px solid green";
+        document.getElementById("home-score-bg").style.border = "5px solid red";
+    }
+    else if(guestScore === homeScore){
+        document.getElementById("guest-score-bg").style.border = "5px solid yellow";
+        document.getElementById("home-score-bg").style.border = "5px solid yellow";
     }
 }
 
